@@ -13,10 +13,6 @@ describe(`Function 'checkPassword':`, () => {
     expect(typeof checkPassword("Password1!")).toBe("boolean");
   });
 
-  it(`valid pass with 8 chars`, () => {
-    expect(typeof checkPassword("Password1!")).toBe("boolean");
-  });
-
   it(`valid pass with 8 < chars < 16`, () => {
     expect(checkPassword("Pass1ord!")).toBe(true);
   });
